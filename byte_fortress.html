@@ -1,110 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Byte Fortress Info</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #1e1e1e;
-      color: #ffffff;
-    }
-    .container {
-      height: 100vh; /* Set container height to fill the viewport */
-    }
-    .card {
-      background-color: #2e2e2e;
-      border-color: #343a40;
-    }
-    .card-title {
-      color: #17a2b8;
-    }
-    .card-text {
-      color: #ffffff;
-    }
-    code {
-      background-color: #343a40;
-      color: #ffffff;
-      padding: 2px 4px;
-      border-radius: 3px;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byte Fortress</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Meta Tags -->
+    <meta name="description"
+        content="Byte Fortress is a Rust-based file storage and management system that utilizes RocksDB for efficient data storage and retrieval." />
+    <meta name="keywords"
+        content="Byte Fortress, Rust, file storage, RocksDB, efficient data storage, RESTful API, file management, ByteFortress, byte-fortress" />
+    <meta name="author" content="Sanket Patil" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Byte Fortress" />
+    <meta property="og:description"
+        content="Byte Fortress is a Rust-based file storage and management system that utilizes RocksDB for efficient data storage and retrieval." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sanket3dx.github.io/byte_fortress.html" />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Byte Fortress" />
+    <meta name="twitter:description"
+        content="Byte Fortress is a Rust-based file storage and management system that utilizes RocksDB for efficient data storage and retrieval." />
+    <!-- Style -->
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        .container {
+            height: 100vh;
+            /* Set container height to fill the viewport */
+        }
+
+        .card {
+            background-color: #2e2e2e;
+            border-color: #343a40;
+        }
+
+        .card-title {
+            color: #17a2b8;
+        }
+
+        .card-text {
+            color: #ffffff;
+        }
+
+        code {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container-fluid d-flex justify-content-center align-items-center">
-    <div class="container">
-      <h1 class="mb-4">Byte Fortress</h1>
-      <p>Byte Fortress is a Rust-based file storage and management system that utilizes RocksDB for efficient data storage and retrieval.</p>
-      
-      <h2 class="mt-5">Features</h2>
-      <ul>
-        <li>Efficient Storage: Utilizes RocksDB for efficient data storage and retrieval.</li>
-        <li>RESTful API: Provides a RESTful API for file operations.</li>
-        <li>Easy Deployment: All dependencies are packaged within a single binary.</li>
-      </ul>
-      
-      <h2 class="mt-5">Direct Downloads</h2>
-      <p>Download and run directly:</p>
-      <ul>
-        <li><a href="https://github.com/Sanket3dx/byte_fortress/raw/master/byte_fortress.exe" class="text-info">Windows</a></li>
-        <li><a href="https://raw.githubusercontent.com/Sanket3dx/byte_fortress/master/byte_fortress" class="text-info">Linux</a></li>
-      </ul>
-      
-      <h2 class="mt-5">How to Build and Run</h2>
-      <ol>
-        <li>Clone the repository:</li>
-        <code>git clone https://github.com/Sanket3dx/byte_fortress.git</code>
-        <li>Build the project:</li>
-        <code>cargo build --release</code>
-        <li>Run the server:</li>
-        <code>./target/release/byte_fortress</code>
-      </ol>
-      
-      <h2 class="mt-5">Usage</h2>
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">1. Uploading a File</h3>
-          <p class="card-text">To upload a file, send a POST request to the /file endpoint with the file data in the request body. Include the file path in the x-full-file-path header and the Content-Type header with the appropriate MIME type.</p>
-          <p class="card-text">Example using curl:</p>
-          <code class="card-text">curl -X POST -H "x-full-file-path: /path/to/file.txt" -H "Content-Type: application/octet-stream" --data-binary @/path/to/file.txt http://localhost:8080/file</code>
-        </div>
-      </div>
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="container">
+            <h1 class="mb-4">Byte Fortress</h1>
+            <p>
+                Byte Fortress is a Rust-based file storage and management system that
+                utilizes RocksDB for efficient data storage and retrieval.
+            </p>
 
-      <div class="card mt-3">
-        <div class="card-body">
-          <h3 class="card-title">2. Downloading a File</h3>
-          <p class="card-text">To download a file, send a GET request to the /file endpoint with the file path in the x-full-file-path header.</p>
-          <p class="card-text">Example using curl:</p>
-          <code class="card-text">curl -X GET -H "x-full-file-path: /path/to/file.txt" http://localhost:8080/file</code>
-        </div>
-      </div>
+            <h2 class="mt-5">Features</h2>
+            <ul>
+                <li>
+                    Efficient Storage: Utilizes RocksDB for efficient data storage and
+                    retrieval.
+                </li>
+                <li>RESTful API: Provides a RESTful API for file operations.</li>
+                <li>
+                    Easy Deployment: All dependencies are packaged within a single
+                    binary.
+                </li>
+            </ul>
 
-      <div class="card mt-3">
-        <div class="card-body">
-          <h3 class="card-title">3. Updating a File</h3>
-          <p class="card-text">To update a file, send a POST request to the /file endpoint with the updated file data in the request body. Include the file path in the x-full-file-path header and the Content-Type header with the appropriate MIME type. If a file with the same path already exists, it will be overwritten with the new data.</p>
-          <p class="card-text">Example using curl:</p>
-          <code class="card-text">curl -X POST -H "x-full-file-path: /path/to/file.txt" -H "Content-Type: application/octet-stream" --data-binary @/path/to/updated_file.txt http://localhost:8080/file</code>
-        </div>
-      </div>
+            <h2 class="mt-5">Direct Downloads</h2>
+            <p>Download and run directly:</p>
+            <ul>
+                <li>
+                    <a href="https://github.com/Sanket3dx/byte_fortress/raw/master/byte_fortress.exe"
+                        class="text-info">Windows</a>
+                </li>
+                <li>
+                    <a href="https://raw.githubusercontent.com/Sanket3dx/byte_fortress/master/byte_fortress"
+                        class="text-info">Linux</a>
+                </li>
+            </ul>
 
-      <div class="card mt-3">
-        <div class="card-body">
-          <h3 class="card-title">4. Deleting a File</h3>
-          <p class="card-text">To delete a file, send a DELETE request to the /file endpoint with the file path in the x-full-file-path header.</p>
-          <p class="card-text">Example using curl:</p>
-          <code class="card-text">curl -X DELETE -H "x-full-file-path: /path/to/file.txt" http://localhost:8080/file</code>
+            <h2 class="mt-5">How to Build and Run</h2>
+            <ol>
+                <li>Clone the repository:</li>
+                <code>git clone https://github.com/Sanket3dx/byte_fortress.git</code>
+                <li>Build the project:</li>
+                <code>cargo build --release</code>
+                <li>Run the server:</li>
+                <code>./target/release/byte_fortress</code>
+            </ol>
+
+            <h2 class="mt-5">Usage</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">1. Uploading a File</h3>
+                    <p class="card-text">
+                        To upload a file, send a POST request to the /file endpoint with
+                        the file data in the request body. Include the file path in the
+                        x-full-file-path header and the Content-Type header with the
+                        appropriate MIME type.
+                    </p>
+                    <p class="card-text">Example using curl:</p>
+                    <code class="card-text">curl -X POST -H "x-full-file-path: /path/to/file.txt" -H
+              "Content-Type: application/octet-stream" --data-binary
+              @/path/to/file.txt http://localhost:8080/file</code>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h3 class="card-title">2. Downloading a File</h3>
+                    <p class="card-text">To download a file, send a GET request to the /file endpoint with the file path
+                        in the x-full-file-path header.</p>
+                    <p class="card-text">Example using curl:</p>
+                    <code
+                        class="card-text">curl -X GET -H "x-full-file-path: /path/to/file.txt" http://localhost:8080/file</code>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h3 class="card-title">3. Updating a File</h3>
+                    <p class="card-text">To update a file, send a POST request to the /file endpoint with the updated
+                        file data in the request body. Include the file path in the x-full-file-path header and the
+                        Content-Type header with the appropriate MIME type. If a file with the same path already exists,
+                        it will be overwritten with the new data.</p>
+                    <p class="card-text">Example using curl:</p>
+                    <code
+                        class="card-text">curl -X POST -H "x-full-file-path: /path/to/file.txt" -H "Content-Type: application/octet-stream" --data-binary @/path/to/updated_file.txt http://localhost:8080/file</code>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h3 class="card-title">4. Deleting a File</h3>
+                    <p class="card-text">To delete a file, send a DELETE request to the /file endpoint with the file
+                        path in the x-full-file-path header.</p>
+                    <p class="card-text">Example using curl:</p>
+                    <code
+                        class="card-text">curl -X DELETE -H "x-full-file-path: /path/to/file.txt" http://localhost:8080/file</code>
+                </div>
+            </div>
         </div>
-      </div>
-      
     </div>
-  </div>
-  
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
