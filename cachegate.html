@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CacheGate</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Meta Tags -->
+    <meta name="description" content="CacheGate is a high-performance caching proxy server that accelerates response times and reduces backend
+                load by caching frequently requested data. It intercepts incoming requests, serves cached content when
+                available, and significantly improves overall efficiency. CacheGate is ideal for APIs and web delivery,
+                offering flexible caching and expiration rules for optimized performance." />
+    <meta name="keywords"
+        content="CacheGate, Rust, file storage, RocksDB, efficient data storage, RESTful API, file management, ByteFortress, byte-fortress" />
+    <meta name="author" content="Sanket Patil" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CacheGate" />
+    <meta property="og:description" content="CacheGate is a high-performance caching proxy server that accelerates response times and reduces backend
+                load by caching frequently requested data. It intercepts incoming requests, serves cached content when
+                available, and significantly improves overall efficiency. CacheGate is ideal for APIs and web delivery,
+                offering flexible caching and expiration rules for optimized performance." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sanket3dx.github.io/byte_fortress.html" />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CacheGate" />
+    <meta name="twitter:description" content="CacheGate is a high-performance caching proxy server that accelerates response times and reduces backend
+                load by caching frequently requested data. It intercepts incoming requests, serves cached content when
+                available, and significantly improves overall efficiency. CacheGate is ideal for APIs and web delivery,
+                offering flexible caching and expiration rules for optimized performance." />
+    <!-- Style -->
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        .container {
+            height: 100vh;
+            /* Set container height to fill the viewport */
+        }
+
+        .card {
+            background-color: #2e2e2e;
+            border-color: #343a40;
+        }
+
+        .card-title {
+            color: #17a2b8;
+        }
+
+        .card-text {
+            color: #ffffff;
+        }
+
+        code {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="container">
+            <h1 class="mb-4">CacheGate</h1>
+            <p>
+                CacheGate is a high-performance caching proxy server that accelerates response times and reduces backend
+                load by caching frequently requested data. It intercepts incoming requests, serves cached content when
+                available, and significantly improves overall efficiency. CacheGate is ideal for APIs and web delivery,
+                offering flexible caching and expiration rules for optimized performance.
+            </p>
+
+            <h2 class="mt-5">Features</h2>
+            <ul>
+                <li>
+                    High-Performance Caching: Cache frequently accessed content, reducing load on backend servers.
+                </li>
+                <li>Request Interception: Intercepts requests and serves cached responses if available.</li>
+                <li>
+                    Flexible Caching Rules: Configure specific URL patterns to cache.
+                </li>
+                <li>
+                    Custom Expiration (TTL): Define custom expiration times for cached content.
+                </li>
+                <li>Simple Configuration: Set up with a straightforward JSON configuration.</li>
+            </ul>
+
+            <h2 class="mt-5">Direct Downloads</h2>
+            <p>Download and run directly:</p>
+            <ul>
+                <li>
+                    <a href="https://github.com/Sanket3dx/CacheGate/raw/refs/heads/main/builds/CacheGate_x64.exe"
+                        class="text-info">Windows x64</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sanket3dx/CacheGate/raw/refs/heads/main/builds/CacheGate_x32.exe"
+                        class="text-info">Windows x32</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sanket3dx/CacheGate/raw/refs/heads/main/builds/CacheGate_linux64"
+                        class="text-info">Linux x64</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sanket3dx/CacheGate/raw/refs/heads/main/builds/CacheGate_linux32"
+                        class="text-info">Linux x32</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sanket3dx/CacheGate/raw/refs/heads/main/builds/CacheGate_mac64_intel"
+                        class="text-info">Mac 64 intel</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sanket3dx/CacheGate/raw/refs/heads/main/builds/CacheGate_mac64_arm"
+                        class="text-info">Mac Arm 64</a>
+                </li>
+            </ul>
+
+            <h2 class="mt-5">Usage</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">1. Create a configuration JSON file.</h3>
+                    <p class="card-text">
+                        To start using the application, first create a configuration JSON file. This file contains the
+                        necessary settings such as the port number, the remote URL to which requests will be proxied,
+                        the time-to-live (TTL) for cached responses, and the list of URLs that should be cached.
+                    </p>
+                    <p class="card-text">Here is an example of a configuration file:</p>
+                    <pre class="card-text"><code>{
+    "port": "8091",
+    "remote_url": "http://localhost/test",
+    "ttl": 5,
+    "url_to_cache": [
+        "/api/v1/products/*",
+        "/api/v1/users/*",
+        "/static/*",
+        "/assets/images/*",
+        "/docs/*"
+    ]
+}</code></pre>
+                    <p class="card-text">
+                        In this example:
+                    <ul>
+                        <li><code>"port"</code>: The port number on which the proxy server will listen.</li>
+                        <li><code>"remote_url"</code>: The remote URL where requests will be forwarded.</li>
+                        <li><code>"ttl"</code>: The time-to-live for cached responses, in minutes.</li>
+                        <li><code>"url_to_cache"</code>: A list of URL patterns that should be cached. The wildcard
+                            <code>*</code> is used to match multiple endpoints or resources, for example,
+                            <code>/api/v1/products/*</code> will cache all product-related API requests.
+                        </li>
+                    </ul>
+                    </p>
+                    <p class="card-text">Save this JSON file and provide its path when starting the server.</p>
+                </div>
+            </div>
+
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h3 class="card-title">2. Starting Server</h3>
+                    <p class="card-text">Starts a server and starts caching and serving requests.</p>
+                    <p class="card-text">Example using command:</p>
+                    <code class="card-text">CacheGate -config /path/to/config.json</code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
