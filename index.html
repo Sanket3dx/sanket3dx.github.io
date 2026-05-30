@@ -3,838 +3,860 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Sanket Patil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanket Patil — Backend Engineer & Systems Architect</title>
   <meta name="description"
-    content="Backend engineer specializing in Golang and Rust, with a focus on systems programming, LLM training and integration, and building high-performance, scalable infrastructure. Experienced in distributed systems, serverless architectures, and backend platforms, with additional proficiency in Node.js and Python.">
+    content="Backend engineer specializing in Go, Rust, and distributed systems. Building high-performance infrastructure, real-time data pipelines, event-driven architectures, and developer tools that scale.">
   <meta name="keywords"
-    content="sanket Patil, software engineer, Golang, Rust, patil sanket, sanket3dx, sanketpatil3dx, LLM">
-
-  <meta property="og:title" content="Sanket Patil" />
+    content="Sanket Patil, Backend Engineer, Go, Golang, Rust, Distributed Systems, Systems Programming, Kafka, gRPC, WebSockets, Microservices, API Design">
+  <meta property="og:title" content="Sanket Patil — Backend Engineer & Systems Architect">
   <meta property="og:description"
-    content="Backend engineer specializing in Golang and Rust, with a focus on systems programming, LLM training and integration, and building high-performance, scalable infrastructure. Experienced in distributed systems, serverless architectures, and backend platforms, with additional proficiency in Node.js and Python." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sanket3dx.github.io/" />
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sanket Patil" />
+    content="I build the systems that systems depend on. Backend engineer specializing in Go, Rust, distributed systems, and high-performance infrastructure.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sanket3dx.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sanket Patil — Backend Engineer & Systems Architect">
   <meta name="twitter:description"
-    content="Backend engineer specializing in Golang and Rust, with a focus on systems programming, LLM training and integration, and building high-performance, scalable infrastructure. Experienced in distributed systems, serverless architectures, and backend platforms, with additional proficiency in Node.js and Python." />
-  <!-- Favicons -->
-  <link href="assets/img/melogo.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    content="I build the systems that systems depend on. Backend engineer specializing in Go, Rust, distributed systems, and high-performance infrastructure.">
+  <link rel="icon" href="assets/img/melogo.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 
 <body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-
-      <h1><a href="index.html">Sanket Patil</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/melogo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>Software Engineer </span> from India</h2>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <!-- <li><a class="nav-link" href="#services">Services</a></li> -->
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
-        <a href="https://github.com/Sanket3dx" target="_blank" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://www.instagram.com/the_sanket.patil/" target="_blank" class="instagram"><i
-            class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/sanket-patil3dx/" target="_blank" class="linkedin"><i
-            class="bi bi-linkedin"></i></a>
-      </div>
-
+  <!-- ======= Navigation ======= -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" id="nav-logo">sanket<span>.</span>patil</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#thoughts">Thoughts</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/Sanket-Patil.pdf" download class="nav-resume-btn">Resume</a></li>
+      </ul>
+      <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Open menu">☰</button>
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-        <p>Learn more about me</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <!-- <img src="assets/img/melogo.png" class="img-fluid" alt=""> -->
-          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark"
-            data-type="HORIZONTAL" data-vanity="sanket-patil3dx" data-version="v1"><a
-              class="badge-base__link LI-simple-link"
-              href="https://in.linkedin.com/in/sanket-patil3dx?trk=profile-badge"></a></div>
-          <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="sanket-patil3dx" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/sanket-patil3dx?trk=profile-badge"></a></div> -->
-
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Software Engineer</h3>
-          <p class="fst-italic">
-              Backend engineer specializing in Golang and Rust, with a focus on systems programming, LLM training and integration, and building high-performance, scalable infrastructure. Experienced in distributed systems, serverless architectures, and backend platforms, with additional proficiency in Node.js and Python.
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>20 May 2000</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>sanket3dx.github.io/</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+919420908685</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Pune, India</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor Of Computer
-                    Science</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sanketpatil3dx@gmail.com</span>
-                </li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-              </ul>
-            </div>
-          </div>
-          <p>
-            Results-driven software engineer with expertise in backend systems, architecture design, web applications, desktop tools, and LLM integration. Focused on delivering intelligent, high-impact solutions.
-          </p>
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Counts ======= -->
-    <!-- <div class="counts container">
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Happy Clients</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-          <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-award"></i>
-            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Awards</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div> -->
-    <!-- End Counts -->
-
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">Go <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Rust <i class="val">60%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Python <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">PHP <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">SQL <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Web assembly <i class="val">60%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">TypeScript <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div><!-- End Skills -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Tools & frameworks</h2>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <!-- <i class="ri-store-line" style="color: #ffbb2c;"></i> -->
-            <img src="assets/img/go.png" alt="" height="20px" style="margin-right: 3%;">
-            <h3> Go</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <!-- <i class="ri-store-line" style="color: #ffbb2c;"></i> -->
-            <img src="assets/img/rust.png" alt="" height="20px" style="margin-right: 3%;">
-            <h3> Rust</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <!-- <i class="ri-store-line" style="color: #ffbb2c;"></i> -->
-            <img src="assets/img/512px-Node.js_logo.svg.png" alt="" height="20px" style="margin-right: 3%;">
-            <h3> Node JS</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <!-- <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i> -->
-            <img src="assets/img/985px-Laravel.svg.png" alt="" height="20px" style="margin-right: 3%;">
-            <h3>Laravel</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md- pt-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <!-- <i class="ri-calendar-todo-line" style="color: #e80368;"></i> -->
-            <img src="assets/img/Electron_Software_Framework_Logo.svg.png" alt="" height="20px"
-              style="margin-right: 3%;">
-            <h3>Electron JS</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 pt-4 mt-lg-0">
-          <div class="icon-box">
-            <!-- <i class="ri-paint-brush-line" style="color: #e361ff;"></i> -->
-            <img src="assets/img/pngimg.com - mysql_PNG29.png" alt="" height="20px" style="margin-right: 3%;">
-            <h3>MySQL</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <!-- <i class="ri-database-2-line" style="color: #47aeff;"></i> -->
-            <img src="assets/img/tauri-1.svg" alt="" height="20px" style="margin-right: 3%;">
-            <h3>Tauri</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <!-- <i class="ri-file-list-3-line" style="color: #11dbcf;"></i> -->
-            <img src="assets/img/redis.svg" alt="" height="20px" style="margin-right: 3%;">
-            <h3>Redis</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <!-- <i class="ri-price-tag-2-line" style="color: #4233ff;"></i> -->
-            <img src="assets/img/codeigniter.svg" alt="" height="20px" style="margin-right: 3%;">
-            <h3>Codeigniter</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <!-- <i class="ri-anchor-line" style="color: #b2904f;"></i> -->
-            <img src="assets/img/slim.png" alt="" height="20px" style="margin-right: 3%;">
-            <h3>Slim</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <!-- <i class="ri-disc-line" style="color: #b20969;"></i> -->
-            <img src="assets/img/mongodb-icon-1.svg" alt="" height="20px" style="margin-right: 3%;">
-            <h3>Mongodb</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <!-- <i class="ri-base-station-line" style="color: #ff5828;"></i> -->
-            <img src="assets/img/jquery-1.svg" alt="" height="20px" style="margin-right: 3%;">
-            <h3>jquery</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <!-- <i class="ri-fingerprint-line" style="color: #29cc61;"></i> -->
-            <img src="assets/img/fastapi-1.svg" alt="" height="20px" style="margin-right: 3%;">
-            <h3>Fast API</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <!-- <i class="ri-store-line" style="color: #ffbb2c;"></i> -->
-            <img src="assets/img/linux.png" alt="" height="20px" style="margin-right: 3%;">
-            <h3> Linux</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <!-- <i class="ri-store-line" style="color: #ffbb2c;"></i> -->
-            <img src="assets/img/icons8-postgresql-48.png" alt="" height="20px" style="margin-right: 3%;">
-            <h3> PostgreSQL</h3>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- End Interests -->
-
-    <!-- ======= Testimonials ======= -->
-    <!-- <div class="testimonials container">
-
-      <div class="section-title">
-        <h2>Testimonials</h2>
-      </div>
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor
-                labore quem eram duis noster aute amet eram fore quis sint minim.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim
-                dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
-                labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-          </div>
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div> -->
-    <!-- End Testimonials  -->
-
-  </section>
-  <!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume <a href="./assets/Sanket-Patil.pdf" target="_blank" class="float-end"
-            title="download my resume"><i class="bi bi-download"></i></a>
-        </p>
-
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Sumary</h3>
-          <div class="resume-item pb-0">
-            <h4>Software Engineer</h4>
-            <p><em>Versatile software engineer with a strong aptitude for learning and adapting to various programming
-                languages and frameworks. Expertise in web applications, backend development, and desktop apps.
-                Proficient in languages such as Golang, JavaScript, Rust, PHP, and more.</em>
-            </p>
-            <p>
-            <ul>
-              <li>Developed scalable and efficient web applications using Golang, JavaScript, and PHP, resulting in
-                improved performance and user experience.
-                Implemented robust backend systems, integrating APIs and databases to support high-traffic websites.
-              </li>
-              <li>Collaborated with cross-functional teams, including designers and product managers, to gather
-                requirements and deliver projects on time and within budget.</li>
-              <li>Actively participated in code reviews, ensuring code quality and adherence to best practices.</li>
-              <li>Conducted thorough testing and debugging, identifying and resolving issues to improve software
-                stability.
-              </li>
-              <li>
-                Developed and implemented Linux services using Python, demonstrating proficiency in scripting and
-                automation to enhance system functionality and efficiency.
-              </li>
-            </ul>
-            </p>
-          </div>
-
-          <h3 class="resume-title">Education</h3>
-          <!-- <div class="resume-item">
-            <h4>Master of Fine Arts &amp; Graphic Design</h4>
-            <h5>2015 - 2016</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui
-              ut dignissimos deleniti nerada porti sand markend</p>
-          </div> -->
-          <div class="resume-item">
-            <h4>Bachelor of Computer Science</h4>
-            <h5>2018 - 2021</h5>
-            <p><em>G H Raisoni college, Pune, India</em></p>
-            <p>Bachelor of Computer Science is a highly sought-after degree in the field of technology and information
-              systems. This program provides a comprehensive understanding of computer science principles, programming
-              languages, algorithms, software development, and data analysis. Graduates of this program possess strong
-              analytical and problem-solving skills, along with a deep knowledge of computer systems and their
-              applications.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
-            <h4>Software Developer</h4>
-            <h5>2022 - Present</h5>
-            <p><em>Plus 91 Technologies PVT LTD, Pune, India </em></p>
-            <p>
-            <ul>
-              <li>Designed and implemented microservices architecture in Go and Rust to enhance scalability, modularity, and maintainability, resulting in distributed systems capable of managing complex business logic.</li>
-              <li>Built robust backend systems and APIs using Go and Rust, ensuring efficient data processing, seamless integration, and secure communication between various application components on the cloud.</li>
-              <li>Developed and optimized WebSocket and gRPC-based real-time communication systems, enabling low-latency, high-performance interactions between services and clients.</li>
-              <li>Extensive experience working on Electronic Medical Record (EMR) systems, contributing to the development and enhancement of critical healthcare software solutions.</li>
-              <li>Worked with large volumes of data, leveraging Go and Rust to optimize data serving and processing, improving performance and efficiency in handling complex datasets.</li>
-              <li>Deployed and fine-tuned custom Large Language Models (LLM), integrating them into HIMS to enable intelligent automation, clinical data interpretation, and improved decision-making support for healthcare providers.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Software Developer</h4>
-            <h5>2021 - 2022</h5>
-            <p><em>A L Services PVT LTD, Pune, India</em></p>
-            <p>
-            <ul>
-              <li>Created and optimized data structures for new products using Golang, ensuring efficient storage, retrieval, and manipulation of data, which led to improved performance and scalability.</li>
-              <li>Integrated IoT devices with cloud platforms, enabling seamless data transmission, real-time monitoring, and remote management.</li>
-              <li> Integrated third-party APIs into applications, expanding functionality and enabling seamless interactions with external services and data sources.</li>
-              <li>I possess expertise in building microservices architectures. With a deep understanding of distributed
-                systems and service-oriented architecture principles, I have successfully designed and developed
-                scalable and resilient microservices-based applications.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= Services Section ======= -->
-  <!-- <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Sed ut perspiciatis</a></h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">Magni Dolores</a></h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Nemo Enim</a></h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section> -->
-  <!-- End Services Section -->
-
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>My Works</p>
-      </div>
-      <!-- This Is Filters-->
-      <!-- <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
-        </div>
-      </div> -->
-
-      <div class="row portfolio-container pt-2">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/byte_fortress.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Byte Fortress</h4>
-              <p>Dev Tool</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/byte_fortress.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Byte Fortress"><i class="bx bx-plus"></i></a>
-                <a href="byte_fortress.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-            <h4>Byte Fortress</h4>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/quick_forge.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Quick Forge</h4>
-              <p>Dev Tool</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/quick_forge.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Quick Forge"><i class="bx bx-plus"></i></a>
-                <a href="quick_forge.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-            <h4>Quick Forge</h4>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/cachegate.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>CacheGate</h4>
-              <p>Dev Tool</p>
-              <div class="portfolio-links">
-                <a href="assets/img/cachegate.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="CacheGate"><i class="bx bx-plus"></i></a>
-                <a href="cachegate.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-            <h4>CacheGate</h4>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End Portfolio Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>Pune, India</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
-              <a href="https://github.com/Sanket3dx" target="_blank" class="github"><i class="bi bi-github"></i></a>
-              <a href="https://www.instagram.com/the_sanket.patil/" target="_blank" class="instagram"><i
-                  class="bi bi-instagram"></i></a>
-              <!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
-              <a href="https://www.linkedin.com/in/sanket-patil3dx/" target="_blank" class="linkedin"><i
-                  class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p>sanketpatil3dx@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p>+91 9420908685</p>
-          </div>
-        </div>
-      </div>
-      <!-- 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form> -->
-
-    </div>
-  </section>
-  <!-- End Contact Section -->
-
-  <div class="credits">
-    © Sanket Patil
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" aria-label="Close menu">✕</button>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#thoughts">Thoughts</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/Sanket-Patil.pdf" download class="mobile-resume-btn">Download Resume</a>
   </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- ======= Hero Section ======= -->
+  <section class="hero" id="hero">
+    <div class="hero-canvas">
+      <canvas id="heroCanvas"></canvas>
+    </div>
+    <div class="hero-gradient"></div>
+    <div class="hero-container container">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="hero-status-bar">
+            <span class="status-pill open">
+              <span class="pulse-dot"></span> Open for Opportunities
+            </span>
+            <span class="status-pill tech">
+              <span class="icon">⚙</span> Mesh Gateway: ACTIVE
+            </span>
+          </div>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+          <h1 class="hero-title">
+            I architect systems<br>that <span class="gradient-text">never go down</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Backend engineer building high-throughput distributed systems,
+            real-time data pipelines, and infrastructure that scales — in Go and Rust.
+          </p>
+
+          <div class="hero-roles">
+            <span id="heroTypewriter"></span><span class="cursor"></span>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="hero-metric">
+              <div class="number" data-count="4" data-suffix="+">0</div>
+              <div class="label">Years Engineering</div>
+            </div>
+            <div class="hero-metric">
+              <div class="number" data-count="50" data-suffix="+">0</div>
+              <div class="label">Microservices Built</div>
+            </div>
+            <div class="hero-metric">
+              <div class="number" data-count="99.9" data-suffix="%">0</div>
+              <div class="label">Uptime SLA</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="hero-btn primary">Explore Projects</a>
+            <a href="assets/Sanket-Patil.pdf" download class="hero-btn secondary">Download Resume</a>
+            <a href="#contact" class="hero-btn tertiary">Contact Operator</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="system-monitor-panel">
+            <div class="panel-header">
+              <div class="panel-controls">
+                <span class="p-dot red"></span>
+                <span class="p-dot yellow"></span>
+                <span class="p-dot green"></span>
+              </div>
+              <div class="panel-title">Sanket3dx Cluster Monitor v2.0</div>
+              <div class="panel-status-tag">STABLE</div>
+            </div>
+
+            <div class="panel-body">
+              <!-- Node Grid Section -->
+              <div class="monitor-section">
+                <div class="monitor-label">SYSTEM ACTIVE NODE REGISTRY</div>
+                <div class="node-grid" id="monitorNodeGrid">
+                  <!-- Generated via JS -->
+                </div>
+              </div>
+
+              <!-- Metrics Overview -->
+              <div class="monitor-metrics">
+                <div class="monitor-metric-item">
+                  <span class="m-lbl">ACTIVE NODES</span>
+                  <span class="m-val" id="monitorNodeCount">9</span>
+                </div>
+                <div class="monitor-metric-item">
+                  <span class="m-lbl">GOROUTINES</span>
+                  <span class="m-val" id="monitorGoroutines">24</span>
+                </div>
+                <div class="monitor-metric-item">
+                  <span class="m-lbl">REQ/SEC</span>
+                  <span class="m-val" id="monitorReqSec">0</span>
+                </div>
+              </div>
+
+              <!-- Realtime Throughput Chart -->
+              <div class="monitor-section">
+                <div class="monitor-label">CACHEGATE SYSTEM LOAD</div>
+                <div class="chart-container">
+                  <canvas id="heroThroughputChart"></canvas>
+                </div>
+              </div>
+
+              <!-- Action Control Panel -->
+              <div class="monitor-section">
+                <div class="monitor-label">TEST BENCH CONTROLS</div>
+                <div class="monitor-controls">
+                  <button class="ctrl-btn" id="btnScaleGrid">Scale Mesh</button>
+                  <button class="ctrl-btn" id="btnFailover">Failover Node</button>
+                  <button class="ctrl-btn" id="btnInjectLoad">Inject Load</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======= About Section ======= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">01 — About</div>
+        <h2 class="section-title">The engineer behind<br>the infrastructure</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal reveal-delay-1">
+          <p>
+            Hi, I'm <strong>Sanket</strong>. I'm a backend engineer based in <strong>Pune, India</strong> with 4+ years
+            of experience building production systems — primarily in <strong>Go</strong> and <strong>Rust</strong>.
+          </p>
+          <p>
+            I specialize in designing and building <strong>distributed backends, event-driven architectures, and
+              real-time data pipelines</strong>. My day-to-day involves API gateways, microservices, Kafka pipelines,
+            gRPC services, and async processing systems that handle high throughput at scale.
+          </p>
+          <p>
+            I've shipped systems across <strong>enterprise SaaS and healthcare</strong> — domains where downtime isn't
+            an option and data consistency is non-negotiable. That pressure shaped how I think: <strong>every system I
+              build is designed to be observable, fault-tolerant, and boring-reliable</strong>.
+          </p>
+          <p>
+            Outside of work, I build <strong>developer tools</strong> — caching proxies, file storage engines, zero-code
+            API generators. I believe the best engineers are also <strong>toolmakers</strong>.
+          </p>
+          <div class="about-meta reveal reveal-delay-2">
+            <div class="about-avatar-container">
+              <div class="about-core-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3M9 9h6v6H9z" />
+                </svg>
+              </div>
+              <div class="avatar-ring"></div>
+            </div>
+            <div class="about-meta-details">
+              <h4 class="about-meta-name">Sanket Patil</h4>
+              <p class="about-meta-role">Senior Software Engineer (Backend & Systems)</p>
+              <div class="about-badge-links">
+                <a href="https://www.linkedin.com/in/sanket-patil3dx/" target="_blank" class="linkedin-badge-pill">
+                  <span class="badge-icon">in</span> LinkedIn Verified
+                </a>
+                <a href="https://github.com/Sanket3dx" target="_blank" class="github-badge-pill">
+                  <span class="badge-icon">git</span> Sanket3dx
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal reveal-delay-2" id="about-visual">
+          <canvas id="aboutCanvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Experience Section ======= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">02 — Experience</div>
+        <h2 class="section-title">Engineering journey</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-role">Software Developer</div>
+          <div class="timeline-company">Plus91 Technologies Pvt Ltd</div>
+          <div class="timeline-date">2022 — Present · Pune, India</div>
+          <ul class="timeline-desc">
+            <li>Designed and shipped microservices architecture in Go and Rust — scalable, modular systems handling
+              complex distributed business logic</li>
+            <li>Built high-throughput APIs and event-driven backends with secure, real-time communication between
+              services on cloud infrastructure</li>
+            <li>Developed WebSocket and gRPC-based real-time systems enabling sub-100ms latency interactions between
+              services and clients</li>
+            <li>Engineered Kafka-based data pipelines for real-time event streaming, async processing, and cross-service
+              orchestration at scale</li>
+            <li>Deployed and fine-tuned custom LLMs, integrating them into production platforms for intelligent
+              automation and decision support</li>
+            <li>Optimized data layer across PostgreSQL, MongoDB, and MySQL — query tuning, schema design, and efficient
+              data serving at volume</li>
+          </ul>
+          <div class="timeline-tech">
+            <span class="tech-pill">Go</span>
+            <span class="tech-pill">Rust</span>
+            <span class="tech-pill">Kafka</span>
+            <span class="tech-pill">gRPC</span>
+            <span class="tech-pill">WebSockets</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Redis</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">LLM</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">Software Developer</div>
+          <div class="timeline-company">A L Services Pvt Ltd</div>
+          <div class="timeline-date">2021 — 2022 · Pune, India</div>
+          <ul class="timeline-desc">
+            <li>Created and optimized data structures for new products using Golang, improving storage efficiency,
+              retrieval speed, and system scalability</li>
+            <li>Integrated IoT devices with cloud platforms enabling real-time monitoring, data transmission, and remote
+              management</li>
+            <li>Built microservices-based applications with deep understanding of distributed systems and
+              service-oriented architecture</li>
+            <li>Integrated third-party APIs expanding platform functionality and enabling seamless external service
+              interactions</li>
+          </ul>
+          <div class="timeline-tech">
+            <span class="tech-pill">Go</span>
+            <span class="tech-pill">IoT</span>
+            <span class="tech-pill">Cloud</span>
+            <span class="tech-pill">Microservices</span>
+            <span class="tech-pill">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-role">Bachelor of Computer Science</div>
+          <div class="timeline-company">G H Raisoni College</div>
+          <div class="timeline-date">2018 — 2021 · Pune, India</div>
+          <ul class="timeline-desc">
+            <li>Comprehensive study of computer science principles, algorithms, data structures, and software
+              development</li>
+            <li>Foundation in systems thinking that would later drive backend engineering career</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Projects Section ======= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">03 — Projects</div>
+        <h2 class="section-title">Systems I've built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- CacheGate -->
+        <div class="project-card">
+          <div class="project-icon">⚡</div>
+          <div class="project-name">CacheGate</div>
+          <div class="project-desc">
+            High-performance caching proxy server that accelerates response times and reduces backend load. Intercepts
+            requests, serves cached content, and dramatically improves API performance.
+          </div>
+
+          <div class="project-viz cachegate-viz">
+            <div class="viz-row">
+              <span class="viz-lbl">GATEWAY:</span>
+              <span class="viz-val active-cyan">PROXYING</span>
+            </div>
+            <div class="viz-row">
+              <span class="viz-lbl">HIT RATIO:</span>
+              <span class="viz-val active-emerald" id="pCacheHit">98.4%</span>
+            </div>
+            <div class="cache-bar">
+              <div class="cache-fill" id="pCacheFill" style="width: 98.4%"></div>
+            </div>
+          </div>
+
+          <div class="timeline-tech">
+            <span class="tech-pill">Go</span>
+            <span class="tech-pill">Proxy</span>
+            <span class="tech-pill">Caching</span>
+            <span class="tech-pill">Performance</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sanket3dx/CacheGate" target="_blank" class="project-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Byte Fortress -->
+        <div class="project-card">
+          <div class="project-icon">🏰</div>
+          <div class="project-name">Byte Fortress</div>
+          <div class="project-desc">
+            Rust-based file storage and management system utilizing RocksDB for efficient data storage and retrieval.
+            All dependencies packaged in a single binary for easy deployment.
+          </div>
+
+          <div class="project-viz storage-viz">
+            <div class="storage-nodes">
+              <span class="storage-node active" id="nodeRoot">/root</span>
+              <span class="storage-node" id="nodeDb">/db</span>
+              <span class="storage-node" id="nodeWal">/wal</span>
+            </div>
+            <div class="storage-stats">
+              <span>STORAGE ENGINE</span>
+              <span class="active-violet">ROCKSDB : STABLE</span>
+            </div>
+          </div>
+
+          <div class="timeline-tech">
+            <span class="tech-pill">Rust</span>
+            <span class="tech-pill">RocksDB</span>
+            <span class="tech-pill">REST API</span>
+            <span class="tech-pill">Storage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sanket3dx/byte_fortress" target="_blank" class="project-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Forge -->
+        <div class="project-card">
+          <div class="project-icon">🔨</div>
+          <div class="project-name">Quick Forge</div>
+          <div class="project-desc">
+            Lightning-fast Go tool for creating APIs without writing code. Supports MySQL and MongoDB with real-time
+            debug console and webhook integration for rapid API development.
+          </div>
+
+          <div class="project-viz forge-viz">
+            <div class="forge-endpoint">
+              <span class="method">GET</span>
+              <span class="path">/api/v1/users</span>
+              <button class="forge-run-btn" id="btnForgeRun">TEST</button>
+            </div>
+            <pre class="forge-response" id="forgeResponse">Response payload idle</pre>
+          </div>
+
+          <div class="timeline-tech">
+            <span class="tech-pill">Go</span>
+            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">Code Gen</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sanket3dx/Quick-Forge" target="_blank" class="project-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Kriti -->
+        <div class="project-card">
+          <div class="project-icon">🧬</div>
+          <div class="project-name">Kriti</div>
+          <div class="project-desc">
+            A modern programming language built from scratch in Rust. Inspired by the Sanskrit word for "creation,"
+            Kriti combines expressive syntax with robust multithreading capabilities.
+          </div>
+
+          <div class="project-viz compiler-viz">
+            <div class="compiler-source">
+              <code>fn main() { spawn task(); }</code>
+            </div>
+            <div class="compiler-output">
+              <span class="lbl" id="compilerLbl">LEXER STATE: OK</span>
+              <span class="progress-bar"><span class="progress-fill" id="compilerProgress"
+                  style="width: 100%"></span></span>
+            </div>
+          </div>
+
+          <div class="timeline-tech">
+            <span class="tech-pill">Rust</span>
+            <span class="tech-pill">Compilers</span>
+            <span class="tech-pill">Language</span>
+            <span class="tech-pill">Parsers</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sanket3dx/kriti" target="_blank" class="project-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- phpgo -->
+        <div class="project-card">
+          <div class="project-icon">⚡</div>
+          <div class="project-name">phpgo</div>
+          <div class="project-desc">
+            A native PHP extension written in Go that brings Go's concurrency primitives directly to PHP. Spawns
+            lightweight Go runtimes for PHP execution, enabling parallel workflows.
+          </div>
+
+          <div class="project-viz phpgo-viz">
+            <div class="thread-channel">
+              <span class="thread php-t">PHP Script</span>
+              <span class="channel-arrow">⇆</span>
+              <span class="thread go-t">Go Channel</span>
+            </div>
+            <div class="thread-telemetry">
+              <span>SYNC MECHANISM</span>
+              <span class="thread-status active-emerald">CGO SCALING</span>
+            </div>
+          </div>
+
+          <div class="timeline-tech">
+            <span class="tech-pill">Go</span>
+            <span class="tech-pill">PHP</span>
+            <span class="tech-pill">CGO</span>
+            <span class="tech-pill">Concurrency</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sanket3dx/phpgo" target="_blank" class="project-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- LogPose -->
+        <div class="project-card">
+          <div class="project-icon">🧭</div>
+          <div class="project-name">LogPose</div>
+          <div class="project-desc">
+            A high-performance service discovery system built in Rust. Features a modular workspace architecture to
+            provide steady and reliable navigation in complex distributed service meshes.
+          </div>
+
+          <div class="project-viz mesh-viz">
+            <div class="mesh-nodes-micro">
+              <span class="m-node healthy" id="logposeN1"></span>
+              <span class="m-node healthy" id="logposeN2"></span>
+              <span class="m-node healthy" id="logposeN3"></span>
+            </div>
+            <div class="mesh-status-micro">
+              <span>DISCOVERY STATUS</span>
+              <span class="active-cyan">HEALTHY</span>
+            </div>
+          </div>
+
+          <div class="timeline-tech">
+            <span class="tech-pill">Rust</span>
+            <span class="tech-pill">Discovery</span>
+            <span class="tech-pill">gRPC</span>
+            <span class="tech-pill">Distributed</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sanket3dx/LogPose" target="_blank" class="project-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Skills Section ======= -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">04 — Skills</div>
+        <h2 class="section-title">Technology constellation</h2>
+      </div>
+      <div class="skills-canvas-wrap reveal">
+        <canvas id="skillsCanvas"></canvas>
+      </div>
+      <div class="skills-legend reveal reveal-delay-1">
+        <div class="legend-item">
+          <span class="legend-dot" style="background:#00d4ff"></span>
+          Languages
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background:#10b981"></span>
+          Databases
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background:#7c3aed"></span>
+          Infrastructure
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="background:#f59e0b"></span>
+          Frameworks
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Architecture Section ======= -->
+  <section class="section" id="architecture">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">05 — Architecture</div>
+        <h2 class="section-title">How I think about systems</h2>
+      </div>
+      <p class="reveal reveal-delay-1"
+        style="color:var(--text-secondary); max-width:700px; margin-bottom:40px; font-size:1.05rem; line-height:1.8;">
+        Production infrastructure demands fault-tolerant, real-time systems. This is the architecture pattern I work
+        with daily — from client request to real-time delivery, with event-driven processing at every layer.
+      </p>
+      <div class="arch-diagram reveal reveal-delay-2">
+        <canvas id="archCanvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Thoughts Section ======= -->
+  <section class="section" id="thoughts">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">06 — Thoughts</div>
+        <h2 class="section-title">Engineering philosophy</h2>
+      </div>
+      <div class="thoughts-bento">
+        <!-- Bento Card 1: Reliability -->
+        <div class="bento-card bento-wide reveal">
+          <div class="bento-card-content">
+            <div class="thought-number">01</div>
+            <h3 class="thought-title">Reliability over cleverness</h3>
+            <p class="thought-text">When you're moving critical data between distributed services, clever code is
+              dangerous. I optimize for readability, predictability, and fault tolerance. The best systems are boring
+              systems that never fail.</p>
+          </div>
+          <div class="bento-card-interactive terminal-mockup">
+            <div class="mockup-header">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+              <span class="mockup-title">kafka-consumer-group</span>
+            </div>
+            <div class="mockup-body" id="bentoKafkaLogger">
+              <!-- Dynamic system logs -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento Card 2: Go Concurrency -->
+        <div class="bento-card reveal">
+          <div class="bento-card-content">
+            <div class="thought-number">02</div>
+            <h3 class="thought-title">Go is a systems language</h3>
+            <p class="thought-text">Go isn't just for web servers. Its concurrency model, simplicity, and compile-time
+              guarantees make it ideal for building distributed infrastructure. It forces you to think about errors, and
+              that's a feature.</p>
+          </div>
+          <div class="bento-card-interactive goroutine-sim">
+            <div class="worker-pool">
+              <div class="worker-node" id="gWorker1">Worker 01 <span class="status">IDLE</span></div>
+              <div class="worker-node" id="gWorker2">Worker 02 <span class="status">IDLE</span></div>
+              <div class="worker-node" id="gWorker3">Worker 03 <span class="status">IDLE</span></div>
+            </div>
+            <div class="scheduler-queue">
+              <div class="queue-label">CHANNEL BUFFER [5]</div>
+              <div class="queue-slots" id="gQueueSlots">
+                <span class="slot"></span><span class="slot"></span><span class="slot"></span><span
+                  class="slot"></span><span class="slot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento Card 3: Build Tools -->
+        <div class="bento-card reveal">
+          <div class="bento-card-content">
+            <div class="thought-number">03</div>
+            <h3 class="thought-title">Build tools, not just features</h3>
+            <p class="thought-text">The best investment an engineer can make is building tools that multiply the team's
+              output. CacheGate, Byte Fortress, Quick Forge — each one eliminated hours of repetitive work.</p>
+          </div>
+          <div class="bento-card-interactive tools-mockup">
+            <div class="tools-header">
+              <button class="tool-btn active" data-tool="cachegate">CacheGate</button>
+              <button class="tool-btn" data-tool="quickforge">QuickForge</button>
+            </div>
+            <div class="tools-body">
+              <div class="tool-code-preview" id="toolCodePreview">
+                <code>$ cachegate --port=8080 --upstream=http://api.backend</code>
+                <div class="tool-status">STATUS: Proxying cache layer... OK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento Card 4: Production Pressure -->
+        <div class="bento-card bento-wide reveal">
+          <div class="bento-card-content">
+            <div class="thought-number">04</div>
+            <h3 class="thought-title">Production pressure shapes engineers</h3>
+            <p class="thought-text">Working in domains where data loss is unacceptable — enterprise SaaS, healthcare —
+              forces you to think differently. You can't have eventual consistency where it matters. You can't lose
+              messages. That pressure taught me to build systems that are honest about their state.</p>
+          </div>
+          <div class="bento-card-interactive slider-mockup">
+            <div class="slider-header">
+              <span class="slider-lbl">INJECT TRAFFIC LOAD:</span>
+              <span class="slider-multiplier" id="bentoSliderVal">1.0x</span>
+            </div>
+            <input type="range" min="1" max="10" value="1" class="bento-slider" id="bentoSlider">
+            <div class="slider-telemetry">
+              <div class="telemetry-col">
+                <span class="lbl">LATENCY</span>
+                <span class="val" id="bentoLatencyVal">12ms</span>
+              </div>
+              <div class="telemetry-col">
+                <span class="lbl">DB CONNECTIONS</span>
+                <span class="val" id="bentoDbConns">14/100</span>
+              </div>
+              <div class="telemetry-col">
+                <span class="lbl">BUFFER RATE</span>
+                <span class="val" id="bentoBufferRate" style="color:var(--accent-emerald)">NORMAL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Contact Section ======= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center">
+        <div class="section-label" style="justify-content:center">07 — Contact</div>
+        <h2 class="section-title">Let's build something</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-terminal reveal reveal-delay-1">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">sanket@systems ~ </span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="terminal-prompt">$ </span>
+              <span class="terminal-cmd">whoami</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">Sanket Patil — Backend Engineer, Pune, India</span>
+            </div>
+            <div class="terminal-line"><br></div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$ </span>
+              <span class="terminal-cmd">cat contact.json</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">email → <a
+                  href="mailto:sanketpatil3dx@gmail.com">sanketpatil3dx@gmail.com</a></span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">github → <a href="https://github.com/Sanket3dx"
+                  target="_blank">github.com/Sanket3dx</a></span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">linkedin → <a href="https://www.linkedin.com/in/sanket-patil3dx/"
+                  target="_blank">linkedin.com/in/sanket-patil3dx</a></span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">instagram → <a href="https://www.instagram.com/the_sanket.patil/"
+                  target="_blank">instagram.com/the_sanket.patil</a></span>
+            </div>
+            <div class="terminal-line"><br></div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$ </span>
+              <span class="terminal-cmd">cat status.txt</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output" style="color:var(--accent-emerald)">✓ Open to new opportunities. Looking for
+                bigger engineering challenges.</span>
+            </div>
+            <div class="terminal-line"><br></div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$ </span>
+              <span class="terminal-cmd">tail -f /var/log/node-diagnostics.log</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output log-line-1" style="color:var(--accent-cyan)">[Discovery] Consul service
+                registry... active</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output log-line-2" style="color:var(--accent-violet)">[Concurrency] phpgo extension
+                running... 12 goroutines</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output log-line-3" style="color:var(--accent-emerald)">[Proxy] CacheGate routing...
+                0 req/sec (hit rate: 98.4%)</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output log-line-4" style="color:var(--accent-amber)">[System] Mem: 42.1MB | Threads:
+                8 | Syscalls: 114/s</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$ </span>
+              <span class="terminal-cmd" style="opacity:0.5">█</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="linkedin-card reveal reveal-delay-2">
+          <div class="linkedin-card-header">
+            <div class="linkedin-avatar-wrap">
+              <div class="linkedin-avatar">SP</div>
+              <span class="linkedin-badge-logo">in</span>
+            </div>
+            <div class="linkedin-profile-info">
+              <h3 class="linkedin-name">Sanket Patil</h3>
+              <p class="linkedin-title">Backend & Systems Engineer</p>
+              <p class="linkedin-company">Plus91 Technologies</p>
+            </div>
+          </div>
+
+          <div class="linkedin-bio">
+            Specializing in high-performance backend systems in Go and Rust. Building concurrency extensions (phpgo),
+            distributed caching layers (CacheGate), and developer tooling.
+          </div>
+          <div class="linkedin-actions">
+            <a href="https://www.linkedin.com/in/sanket-patil3dx/" target="_blank" class="linkedin-btn">
+              <span class="btn-text">Connect on LinkedIn</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+          <div class="official-badge-container">
+            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer
+              type="text/javascript"></script>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
+              data-type="vertical" data-vanity="sanket-patil3dx" data-version="v1">
+              <a class="badge-base__link LI-simple-link"
+                href="https://in.linkedin.com/in/sanket-patil3dx?trk=profile-badge">Sanket Patil</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://github.com/Sanket3dx" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/sanket-patil3dx/" target="_blank">LinkedIn</a>
+        <a href="mailto:sanketpatil3dx@gmail.com">Email</a>
+        <a href="./assets/Sanket-Patil.pdf" target="_blank">Resume ↓</a>
+      </div>
+      <div class="footer-text">
+        Designed & built by Sanket Patil · 2024
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/portfolio.js"></script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1J4RXDP7ML"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-1J4RXDP7ML');
   </script>
-
 </body>
 
 </html>
